@@ -56,6 +56,7 @@ app.get("/subview",async(request,response)=>{
 
 app.get('/view',async(request,response)=>{
     var data=await catemodel.find();
+    console.log(data)
     response.send(data)
 });
 app.get('/views',async(request,response)=>{
